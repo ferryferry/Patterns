@@ -19,6 +19,10 @@ namespace Models
 		public DbSet<Product> Products { get; set; }
 		public DbSet<Supplier> Supliers { get; set; }
 
+		public DbSet<Parent> Parents { get; set; }
+		public DbSet<ParentChild> ParentChildren { get; set; }
+		public DbSet<Child> Children { get; set; }
+
 		protected override void OnModelCreating(ModelBuilder builder)
 		{
 			base.OnModelCreating(builder);
